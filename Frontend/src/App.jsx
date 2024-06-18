@@ -166,6 +166,12 @@ function App() {
               </div>
             ))}
           </div>
+          {!finished && opponentName && (
+            <h2>You are playing against {opponentName}</h2>
+          )}
+          {finished && finished === "opponentLeftMatch" && (
+            <h2>You won the match, Opponent has left</h2>
+          )}
         </>
       )}
     </div>
